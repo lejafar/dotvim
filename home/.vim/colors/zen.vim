@@ -1,5 +1,5 @@
 " Vim color file
-" Name:       inkpot.vim
+" Name:       zen.vim
 " Maintainer: Ciaran McCreesh <ciaran.mccreesh@blueyonder.co.uk>
 " This should work in the GUI, rxvt-unicode (88 colour mode) and xterm (256
 " colour mode). It won't work in 8/16 colour terminals.
@@ -12,7 +12,7 @@ if exists("syntax_on")
    syntax reset
 endif
 
-let colors_name = "myinkpot"
+let colors_name = "zen"
 
 if has('gui_running')
     hi Normal         gui=NONE   guifg=#cfbfad   guibg=#1e1e27
@@ -154,15 +154,19 @@ elseif (&g:t_Co == 256 || &g:t_Co == 88) && !has('gui_running')
     hi   Constant                      cterm=NONE        ctermfg=37    ctermbg=NONE
     hi   String                        cterm=NONE        ctermfg=222     ctermbg=NONE
     hi   Error                         cterm=NONE        ctermfg=231    ctermbg=52
+
     " Identifier: method name, ...
     hi   Identifier                    cterm=NONE        ctermfg=213   ctermbg=NONE
+
     hi   Ignore                        cterm=NONE        ctermfg=15   ctermbg=NONE
     hi   Number                        cterm=NONE        ctermfg=15    ctermbg=NONE
     hi   PreProc                       cterm=NONE        ctermfg=37     ctermbg=NONE
     hi   Special                       cterm=NONE        ctermfg=222    ctermbg=NONE
     hi   SpecialChar                   cterm=NONE        ctermfg=140    ctermbg=237
+
     " Statement: def, class, ....
     hi   Statement                     cterm=NONE        ctermfg=105     ctermbg=NONE
+
     hi   Todo                          cterm=undercurl   ctermfg=216    ctermbg=NONE
     hi   Type                          cterm=NONE        ctermfg=213    ctermbg=NONE
     hi   Underlined                    cterm=BOLD        ctermfg=178    ctermbg=NONE

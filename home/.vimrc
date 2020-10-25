@@ -23,6 +23,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'cespare/vim-toml'
 Plugin 'preservim/nerdcommenter'
 Plugin 'mattn/emmet-vim'
+Plugin 'prettier/vim-prettier'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
