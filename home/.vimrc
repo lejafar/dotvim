@@ -423,7 +423,8 @@ endfunction
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
-"let g:poetv_auto_activate = 1
+let g:poetv_auto_activate = 1
+let g:poetv_executables = ['poetry']
 
 autocmd FileType python setlocal completeopt-=preview
 let g:jedi#environment_paths = [$HOME . '/.pyenv/versions', '.']
