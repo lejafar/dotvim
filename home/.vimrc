@@ -24,6 +24,8 @@ Plugin 'cespare/vim-toml'
 Plugin 'preservim/nerdcommenter'
 Plugin 'mattn/emmet-vim'
 Plugin 'prettier/vim-prettier'
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'MaxMEllon/vim-jsx-pretty'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -423,8 +425,8 @@ endfunction
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
-let g:poetv_auto_activate = 1
-let g:poetv_executables = ['poetry']
+#let g:poetv_auto_activate = 1
+#let g:poetv_executables = ['poetry']
 
 autocmd FileType python setlocal completeopt-=preview
 let g:jedi#environment_paths = [$HOME . '/.pyenv/versions', '.']
